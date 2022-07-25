@@ -1,0 +1,12 @@
+h1, p {
+    background-color: #f1eeee;
+  }
+  
+  em, strong {
+    background-color: #29fd2f;
+  }
+
+  em, strong {
+    background-color: #29fd2f;
+    display: block;
+  }
