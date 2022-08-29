@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>CSS-селекторы</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    body {
+      background: #666 url(fade.png) 0 0 repeat-y;
+      background: -webkit-linear-gradient(right, #000, #666); 
+      background: linear-gradient(to right, #000, #666);
+  }
+    <h1>CSS-селекторы</h1>
+
+    <p>CSS-селекторы позволяют <em>выделять</em> отдельные HTML элементы внутри HTML-документа. Это <strong>супер</strong> полезная вещь.</p>
+
+    <p>Классы также очень важны, поскольку они позволяют выбирать произвольные боксы внутри веб-страницы.</p>
+
+    <p>Мы также будем работать со ссылками, поэтому вот ссылка на <a href='https://moscoding.ru/'>Moscow Coding School</a>.</p>
+
+    <div>Кнопка 1</div>
+
+  </body>
+</html>
+
+<p class="synopsis">CSS-селекторы позволяют <em>выделять</em> отдельные HTML элементы внутри HTML-документа. Это <strong>супер</strong> полезная вещь.</p>
+
+<div class="button">Кнопка 1</div>
+
+<body>
+    <div class="page">  <!-- Добавим это -->
+      <h1>CSS Selectors</h1>
+  
+      <p  class="synopsis">CSS-селекторы позволяют <em>выделять</em> отдельные HTML элементы внутри HTML-документа. Это <strong>супер</strong> полезная вещь.</p>
+  
+      <p>Классы также очень важны, поскольку они позволяют выбирать произвольные боксы внутри веб-страницы.</p>
+  
+      <p>Мы также будем работать со ссылками, поэтому вот ссылка на 
+  <a href="https://moscoding.ru/">Moscow Coding School</a>.</p>
+  
+      <div class="button">Кнопка 1</div>
+    </div>  <!-- Добавим это -->
+  </body>
+
+  <div class="button">Кнопка 2</div>
+
+  <div class="button call-to-action">Кнопка 2</div>
+<div class="call-to-action button">Кнопка 2</div>
+
+/* Старайтесь такого избегать */
+.article h2 .subheading em {
+/* Специальные стили */
+}
+<div class="article">
+    <h2>
+      <span class="subheading">Это <em>очень</em> особенный текст</span>
+    </h2>
+  </div>
+
+  <div class="">Moscow Coding School</div>
+  <div class="text summary call-to-action">Moscow Coding School</div>
+  <a class="button" href="nowhere.html">Кнопка один</a>
+<a class="button call-to-action" href="nowhere.html">Кнопка два</a>
+.button:link,               /* Поменяем это */
+.button:visited {           /* Поменяем это */
+  display: block;           /* Поменяем это */
+  text-decoration: none;    /* Поменяем это */
+
+  color: #FFF;              /* Все остальное остается как есть */
+  background-color: #5995DA;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #5D6063;
+  border-radius: 5px;
+
+  width: 200px;
+  margin: 20px auto;
+}
+<div class="sidebar">
+  <p>Если бы у этой страницы был сайдбар...</p>
+  <p>У нас были бы проблемы с псевдоклассами.</p>
+</div>
+<a id="button-2" class="button" href="nowhere.html">Кнопка 2</a>
+<!-- С той же страницы -->
+<a href="#button-2">Переход на Кнопку 2</a>
+
+<!-- С другой страницы -->
+<a href="selectors.html#button-2">Переход на Кнопку 2</a>
+
+<div class="summary" id="summary-block"></div>
+
+<body>
+  <div class="page">  <!-- Добавим это -->
+    <h1>CSS Selectors</h1>
+
+    <p  class="synopsis">CSS-селекторы позволяют <em>выделять</em> отдельные HTML элементы внутри HTML-документа. Это <strong>супер</strong> полезная вещь.</p>
+
+    <p>Классы также очень важны, поскольку они позволяют выбирать произвольные боксы внутри веб-страницы.</p>
+
+    <p>Мы также будем работать со ссылками, поэтому вот ссылка на 
+<a href="https://moscoding.ru/">Moscow Coding School</a>.</p>
+
+    <div class="button">Кнопка 1</div>
+  </div>  <!-- Добавим это -->
+</body>
