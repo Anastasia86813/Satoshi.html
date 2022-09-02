@@ -29,9 +29,8 @@ body  {
     display: flex;
     width: 1440px;
     padding-top: 104px;
-    padding-left: 133px;
-    padding-right: 133px;
     padding-bottom: 168px;
+    margin: auto;
     background-color: #f8f8f8
 }
 
@@ -87,9 +86,7 @@ body  {
 
 .header-img {
   display: block;
-  width: 772px;
-  margin-top: -104px;
-  margin-top: -90px;
+ 
 }
 
 .popular-title {
@@ -111,21 +108,26 @@ body  {
 
 .item-wrapper {
   margin: 0 auto;
-  width: 417px;
+  width: 1040px;
   margin-bottom: 85px;
+
+  display: flex
+  gap 20px;
 
 
 }
 
 .item-img-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 417px;
-  height: 670px;
-  background-color: #f8f8f8;
-  margin-bottom: 67px;
+   background-color: #f8f8f8;
+   margin-bottom: 67px;
 }
+
+.item-img-wrapper img {
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
+}
+
 
 .item-title {
   font-size: 32px;
